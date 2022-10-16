@@ -1,0 +1,79 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7e68b1;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piano {
+  display: flex;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+.red {
+  --width: 100px;
+  background-color: #e31616;
+  border: 1px solid #333;
+}
+
+.red.active {
+  background-color: #CCC;
+}
+.yellow{
+  --width: 100px;
+  background-color: #ecde22;
+  border: 1px solid #333;
+}
+
+.yellow.active {
+  background-color: #CCC;
+}
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.white.active {
+  background-color: #CCC;
+}
+.black {
+  --width: 100px;
+  background-color: #110e0e;
+  border: 1px solid #333;
+}
+
+.black.active {
+  background-color: #CCC;
+}
+.green {
+  --width: 100px;
+  background-color: #36e754;
+  border: 1px solid #333;
+}
+
+.green.active {
+  background-color: #CCC;
+}
+.blue {
+  --width: 100px;
+  background-color: #1e24cc;
+  border: 1px solid #333;
+}
+
+.blue.active {
+  background-color: #CCC;
+}
+p{   
+    position: absolute;
+    bottom: 0;
+}
